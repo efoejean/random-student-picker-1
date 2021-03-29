@@ -1,1 +1,46 @@
+form {
+  border: solid thin black;
+  border-radius: 4px;
+  gap: 4px;
+  margin: auto 0;
+  padding: 8px;
+  width: 480px;
+}
 
+/* Utility Classes */
+.button {
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+/* The `--` conveys that this is a modifier class intended for use with `.button` */
+.button--reset {
+  background-color: rosybrown;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+/* CSS Tricks */
+.screen-reader-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
