@@ -3,7 +3,8 @@ const students = [];
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log("hello submit");
 
-  // TODO: Get the names from the form and add them to `students`
+  const newStudent = Object.fromEntries(new FormData(event.target));
+
+  students.push(newStudent);
 });
