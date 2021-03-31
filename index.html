@@ -20,17 +20,24 @@
       <div class="flex">
         <div>
           <label for="fname" class="screen-reader-text">First Name</label
-          ><input placeholder="First Name" type="text" id="fname" />
+          ><input
+            placeholder="First Name"
+            type="text"
+            id="fname"
+            name="fname"
+          />
         </div>
 
         <div>
           <label for="lname" class="screen-reader-text">Last Name</label
-          ><input placeholder="Last Name" type="text" id="lname" />
+          ><input placeholder="Last Name" type="text" id="lname" name="lname" />
         </div>
       </div>
       <button type="submit" class="button">Add Student!</button>
       <button type="reset" class="button button--reset">Reset!</button>
     </form>
+
+    <button class="button">Pick a student!</button>
 
     <script src="./scripts.js" type="module"></script>
   </body>
