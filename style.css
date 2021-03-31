@@ -1,8 +1,14 @@
+:root {
+  --small-gap: 4px;
+  --medium-gap: 8px;
+  --large-gap: 16px;
+}
+
 form {
   border: solid thin black;
   border-radius: 4px;
-  gap: 4px;
-  margin: auto 0;
+  gap: var(--small-gap);
+  margin: 0 auto;
   padding: 8px;
   width: 480px;
 }
@@ -24,6 +30,7 @@ form {
 
 .flex {
   display: flex;
+  gap: var(--medium-gap);
 }
 
 .flex--align-center {
@@ -36,6 +43,10 @@ form {
 
 .flex--justify-center {
   justify-content: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* CSS Tricks */

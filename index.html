@@ -14,22 +14,23 @@
     <title>Random Student Picker | Home</title>
   </head>
   <body>
-    <h1>Random Student Picker</h1>
+    <h1 class="text-center">Random Student Picker</h1>
 
-    <div>
-      <form class="flex flex--column">
+    <form class="flex flex--column">
+      <div class="flex">
         <div>
           <label for="fname" class="screen-reader-text">First Name</label
           ><input placeholder="First Name" type="text" id="fname" />
         </div>
+
         <div>
           <label for="lname" class="screen-reader-text">Last Name</label
           ><input placeholder="Last Name" type="text" id="lname" />
         </div>
-        <button type="submit" class="button">Add Student!</button>
-        <button type="reset" class="button button--reset">Reset!</button>
-      </form>
-    </div>
+      </div>
+      <button type="submit" class="button">Add Student!</button>
+      <button type="reset" class="button button--reset">Reset!</button>
+    </form>
 
     <script src="./scripts.js" type="module"></script>
   </body>
