@@ -29,7 +29,13 @@ form {
   font-weight: bold;
   height: 10vh;
   text-transform: uppercase;
+  transition: all 0.25s;
   width: 20vw;
+}
+
+.button--jumbo:hover,
+.button--jumbo:focus {
+  border-radius: 32px;
 }
 
 .button--reset {
