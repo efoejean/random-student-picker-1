@@ -1,4 +1,5 @@
 const form = document.querySelector("form");
+const p = document.querySelector("p");
 const students = [];
 
 function getRandomIntInclusive(min, max) {
@@ -20,5 +21,5 @@ document.querySelector(".button--jumbo").addEventListener("click", () => {
   const randomName = students[getRandomIntInclusive(0, students.length - 1)];
 
   // Log the first and last name of the student using template literals
-  console.log(`${randomName.fname} ${randomName.lname}`);
+  p.innerText = `${randomName.fname} ${randomName.lname}`;
 });
