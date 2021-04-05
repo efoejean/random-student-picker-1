@@ -19,5 +19,6 @@ form.addEventListener("submit", (event) => {
 });
 
 document.querySelector(".button--jumbo").addEventListener("click", () => {
-  console.log("hello");
+  const randomNum = getRandomIntInclusive(0, students.length - 1);
+  console.log(students[randomNum]);
 });
