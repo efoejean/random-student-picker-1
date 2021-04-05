@@ -1,11 +1,8 @@
-// TODO: Activate the 'random student' button to pick a random student
-// TODO: `log` a random student's name when the button is clicked
-
 const form = document.querySelector("form");
 const students = [];
 
 function getRandomIntInclusive(min, max) {
-  const currentMin = min;
+  const currentMin = Math.ceil(min);
   const currentMax = Math.floor(max);
   return Math.floor(Math.random() * (currentMax - currentMin + 1) + currentMin); // The maximum is inclusive and the minimum is inclusive
 }
@@ -19,6 +16,9 @@ form.addEventListener("submit", (event) => {
 });
 
 document.querySelector(".button--jumbo").addEventListener("click", () => {
-  const randomNum = getRandomIntInclusive(0, students.length - 1);
-  console.log(students[randomNum]);
+  // Get a random student object in the `students` array
+  const randomName = students[getRandomIntInclusive(0, students.length - 1)];
+
+  // Log the first and last name of the student using template literals
+  console.log(`${randomName.fname} ${randomName.lname}`);
 });
