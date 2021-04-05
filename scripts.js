@@ -1,4 +1,5 @@
 // TODO: Activate the 'random student' button to pick a random student
+// TODO: `log` a random student's name when the button is clicked
 
 const form = document.querySelector("form");
 const students = [];
@@ -15,4 +16,8 @@ form.addEventListener("submit", (event) => {
   const newStudent = Object.fromEntries(new FormData(event.target));
 
   students.push(newStudent);
+});
+
+document.querySelector(".button--jumbo").addEventListener("click", () => {
+  console.log("hello");
 });
