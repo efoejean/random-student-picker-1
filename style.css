@@ -24,6 +24,14 @@ form {
 }
 
 /* The `--` conveys that this is a modifier class intended for use with `.button` */
+.button--jumbo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 10vh;
+  text-transform: uppercase;
+  width: 20vw;
+}
+
 .button--reset {
   background-color: rosybrown;
 }
