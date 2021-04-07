@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
-const p = document.querySelector("p");
+const p = document.createElement("p");
 const students = [];
+
+document.body.appendChild(p);
 
 function getRandomIntInclusive(min, max) {
   const currentMin = Math.ceil(min);
